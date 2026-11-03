@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+// Door transitions update the URL while keeping this document alive. Freeze
+// its base URL so fonts, icons, and later-loaded rooms keep resolving locally.
+const portfolioBase = document.createElement('base');
+portfolioBase.href = new URL('./', location.href.replace(/\/(home|work|my-story)\/?(?=[?#]|$)/, '/')).href;
+document.head.prepend(portfolioBase);
+</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aniket Chaudhary — Marketing Content Writer &amp; Copywriter</title>
+<link rel="preload" href="fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+
+<meta name="description" content="Aniket Chaudhary is a New Delhi-based marketing content writer with 5 years of experience in SEO, AEO, website copy, social storytelling, email campaigns, and B2B SaaS content.">
+<meta name="theme-color" content="#1A1818" />
+
+<script>try{if(localStorage.getItem('aniket-mode')==='dark'){document.documentElement.dataset.mode='dark';document.querySelector('meta[name=theme-color]')}}catch(e){}</script>
+<script>
+/* modest devices get the same site with the heaviest per-frame effects eased off */
+(function(){var n=navigator,m=n.deviceMemory||8,c=n.hardwareConcurrency||8,s=n.connection&&n.connection.saveData;
+if(m<=2||c<=2||s)document.documentElement.classList.add('lite');})();
+</script>
+
+
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<meta name="author" content="Aniket Chaudhary" />
+<link rel="stylesheet" href="assets/styles.css?v=writer-2">
+<link rel="stylesheet" href="assets/writer.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Aniket Chaudhary", "jobTitle": "Marketing Content Writer", "email": "ch.aniket12@gmail.com", "telephone": "+919717093257", "address": {"@type": "PostalAddress", "addressLocality": "New Delhi", "addressCountry": "IN"}, "sameAs": ["https://www.linkedin.com/in/aniket-writer/", "https://viralstorys.com/"]}</script>
+<link rel="icon" type="image/svg+xml" href="./favicon.svg?v=ac-1"><link rel="icon" type="image/x-icon" href="./favicon.ico?v=ac-1"><link rel="apple-touch-icon" href="./apple-touch-icon.png?v=ac-1"><link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png?v=ac-1">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ PageLoader ============ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="ld__bg"></div>
+  <div class="ld__stack">
+    <div class="ld__pill" style="--k:0;--c:#1F1C1C;--t:#E8E4E0;--dir:1"><span>Aniket Chaudhary</span></div>
+    <div class="ld__pill" style="--k:1;--c:#22304a;--t:#E8E4E0;--dir:-1"><span>SEO Content</span></div>
+    <div class="ld__pill" style="--k:2;--c:#4a3540;--t:#E8E4E0;--dir:1"><span>Website Copy</span></div>
+    <div class="ld__pill" style="--k:3;--c:#7a8670;--t:#F3EEEC;--dir:-1"><span>Social & Ad Copy</span></div>
+    <div class="ld__pill" style="--k:4;--c:#a4552c;--t:#F3EEEC;--dir:1"><span>Email & Scripts</span></div>
+    <div class="ld__pill" style="--k:5;--c:#C4B0B0;--t:#1A1818;--dir:-1"><span>Creative Writing</span></div>
+  </div>
+  <div class="ld__hud">
+    <div class="ld__top"><span><b>Aniket Chaudhary</b> · Portfolio</span><span>SEO · Copywriting · Content marketing</span></div>
+    <div class="ld__bot">
+      <p class="ld__num"><small>Opening up the work</small><span id="ldCount">000</span></p>
+      <div class="ld__bar"><i></i></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ Header ============ -->
+<header class="hdr rv">
+  <div class="shell hdr__in">
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><button data-go="home" aria-current="page"><span data-h="y 0 -2|o .8 1" data-hs="320 22" data-ht="button">Home</span></button></li>
+        <li><button data-door="0"><span data-h="y 0 -2|o .8 1" data-hs="320 22" data-ht="button">SEO Content</span></button></li>
+        <li><button data-door="1"><span data-h="y 0 -2|o .8 1" data-hs="320 22" data-ht="button">Website Copy</span></button></li>
+        <li><button data-door="2"><span data-h="y 0 -2|o .8 1" data-hs="320 22" data-ht="button">Social & Ad Copy</span></button></li>
+        <li><button data-door="3"><span data-h="y 0 -2|o .8 1" data-hs="320 22" data-ht="button">Email & Scripts</span></button></li>
+        <li><button data-go="about"><span data-h="y 0 -2|o .8 1" data-hs="320 22" data-ht="button">My story</span></button></li>
+        <li><button data-contact><span data-h="y 0 -2|o .8 1" data-hs="320 22" data-ht="button">Contact</span></button></li>
+      </ul>
+    </nav>
+    <div class="hdr__right">
+      <div class="chip clock" aria-label="Local time">
+        <span class="clock__lbl">Local time</span>
+        <span class="clock__time tnum" data-time>9:41am</span>
+        <span class="clock__sep" aria-hidden="true">•</span>
+        <span class="clock__date" data-date>12 March, 2025</span><span class="clock__ds" data-dshort>12 Mar</span>
+      </div>
+      <button class="chip menu-btn" id="menuBtn" style="min-height:44px;min-width:44px" aria-haspopup="dialog" aria-controls="navm" aria-label="Menu">
+        <span data-h="s 1 1.05" data-hs="320 18" data-ht=".menu-btn"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span class="word">Menu</span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ Pull cord: light / dark switch ============ -->
+<div class="cord" id="cord">
+  <canvas class="cord__cv" aria-hidden="true"></canvas>
+  <button class="cord__hit" id="cordHit" role="switch" aria-checked="false" aria-label="Dark mode (pull the cord)"></button>
+</div>
+
+<main id="main">
+  <!-- ============ Hero ============ -->
+  <section id="home" class="hero" aria-label="Introduction">
+    <div class="hero__vig" aria-hidden="true"></div>
+
+    <div class="hero__stage">
+      <div class="fig" id="fig">
+        <img id="figBase" src="assets/aniket-profile.jpg" alt="Aniket Chaudhary, marketing content writer" decoding="async" fetchpriority="high">
+      </div>
+    </div>
+
+    <div class="shell hero__content">
+      <div class="hero__left">
+        <p class="eyebrow rv" style="--d:200ms">Marketing Content Writer · New Delhi</p>
+        <h1 class="h1">
+          <span class="sr-only">Hi, I'm Aniket Chaudhary. I am a marketing content writer and copywriter helping brands grow through stories, SEO, and useful content.</span>
+          <span aria-hidden="true">
+            <span class="line"><span style="--d:250ms">Hi, I'm Aniket.</span></span>
+            <span class="line"><span class="soft" style="--d:370ms">I am a</span></span>
+            <span class="cal-line">
+              <span class="cal rv" id="cal" style="--d:520ms">
+                <span class="cal__body">
+                  <span class="cal__stand"></span>
+                  <span class="cal__stack">
+                    <span class="cal__back"><span class="cal__holes"></span></span>
+                    <span class="cal__page" data-under><span class="cal__holes"></span><span class="cal__word"></span><span class="cal__no"></span><span class="cal__shade"></span></span>
+                    <span class="cal__leaf">
+                      <span class="cal__face"><span class="cal__holes"></span><span class="cal__word"></span><span class="cal__no"></span><span class="cal__shade"></span></span>
+                      <span class="cal__rear"><span class="cal__holes"></span></span>
+                    </span>
+                  </span>
+                  <span class="cal__rings"></span>
+                </span>
+                <span class="cal__measure"></span>
+              </span>
+            </span>
+          </span>
+        </h1>
+        <p class="writer-intro rv">I turn complex ideas into clear, useful content — from the first search to the next conversation. Five years of SEO, storytelling, and copywriting for growing brands.</p>
+        <div class="ctas rv" style="--d:750ms">
+          <button class="pill pill--dark pill--arrow" data-contact>
+            <span class="pill__in" data-h="s 1 1.04" data-hs="320 18" data-ht=".pill">Start a project
+              <span class="pill__badge"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-h="x 0 3" data-hs="320 18" data-ht=".pill"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </span>
+          </button>
+          <button class="pill pill--outline" data-go="works">
+            <span class="pill__in" data-h="s 1 1.04" data-hs="320 18" data-ht=".pill">See my work</span>
+          </button>
+        </div>
+        <div class="writer-links"><a href="downloads/Aniket-Chaudhary-Resume.pdf" download>Download resume ↓</a><a href="https://www.linkedin.com/in/aniket-writer/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+      </div>
+
+    </div>
+
+    <div class="shell hero__bar rv">
+      <span>Let’s talk content</span>
+      <span class="mid">New Delhi, India · Working remotely</span>
+      <span class="scroll">Scroll to explore <i aria-hidden="true">↓</i></span>
+    </div>
+  </section>
+
+<section class="writer-proof shell" aria-label="Career highlights"><div><strong>5 years</strong><span>of content &amp; copywriting</span></div><div><strong>70K+</strong><span>monthly organic visitors at NYGGS</span></div><div><strong>200+</strong><span>qualified B2B campaign leads</span></div><div><strong>0 → 3K</strong><span>LinkedIn followers in 6 months</span></div><p>Highlights from my work at Watsoo, as detailed in my resume.</p></section>
+  <!-- ============ Doors ============ -->
+  <section id="works" class="doors" aria-labelledby="doorsTitle">
+    <div class="doors__tex" aria-hidden="true"></div>
+    <div class="doors__pin">
+    <div class="shell doors__wall">
+      <h2 class="sr-only" id="doorsTitle">My work, one door per skill</h2>
+      <p class="paint" aria-hidden="true">Magic happens <br class="mbr">behind the doors</p>
+      <p class="doors__hint" aria-hidden="true">Swipe along the wall</p>
+      <div class="dinfo" id="dinfo" aria-live="polite"><h3 class="dinfo__h"></h3><p class="dinfo__t"></p><ul class="dinfo__p"></ul></div>
+      <p class="doors__dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></p>
+      <ul class="doors__row">
+        <li class="unit" style="--i:0;--door:#22304a;--door-dk:#1c2840">
+          <button class="doorway" aria-label="Open the SEO Content door">
+            <span class="casing"></span>
+            <span class="opening">
+              <span class="room"></span>
+              <span class="spill"></span>
+              <span class="door">
+                <span class="door__flute"></span>
+                <span class="plate">SEO Content</span>
+                <span class="handle"><span class="handle__lever"></span><span class="handle__lock"></span></span>
+                <span class="door__shade"></span>
+                <span class="leak"></span>
+              </span>
+              <span class="sill"></span>
+            </span>
+            <span class="pool"></span>
+          </button>
+        </li>
+        <li class="unit" style="--i:1;--door:#4a3540;--door-dk:#3f2d37">
+          <button class="doorway" aria-label="Open the Website Copy door">
+            <span class="casing"></span>
+            <span class="opening">
+              <span class="room"></span>
+              <span class="spill"></span>
+              <span class="door">
+                <span class="door__flute"></span>
+                <span class="plate">Website Copy</span>
+                <span class="handle"><span class="handle__lever"></span><span class="handle__lock"></span></span>
+                <span class="door__shade"></span>
+                <span class="leak"></span>
+              </span>
+              <span class="sill"></span>
+            </span>
+            <span class="pool"></span>
+          </button>
+        </li>
+        <li class="unit" style="--i:2;--door:#7a8670;--door-dk:#66705d">
+          <button class="doorway" aria-label="Open the Social & Ad Copy door">
+            <span class="casing"></span>
+            <span class="opening">
+              <span class="room"></span>
+              <span class="spill"></span>
+              <span class="door">
+                <span class="door__flute"></span>
+                <span class="plate">Social & Ad Copy</span>
+                <span class="handle"><span class="handle__lever"></span><span class="handle__lock"></span></span>
+                <span class="door__shade"></span>
+                <span class="leak"></span>
+              </span>
+              <span class="sill"></span>
+            </span>
+            <span class="pool"></span>
+          </button>
+        </li>
+        <li class="unit" style="--i:3;--door:#a4552c;--door-dk:#8c4826">
+          <button class="doorway" aria-label="Open the Email & Scripts door">
+            <span class="casing"></span>
+            <span class="opening">
+              <span class="room"></span>
+              <span class="spill"></span>
+              <span class="door">
+                <span class="door__flute"></span>
+                <span class="plate">Email & Scripts</span>
+                <span class="handle"><span class="handle__lever"></span><span class="handle__lock"></span></span>
+                <span class="door__shade"></span>
+                <span class="leak"></span>
+              </span>
+              <span class="sill"></span>
+            </span>
+            <span class="pool"></span>
+          </button>
+        </li>
+        <li class="unit unit--secret" style="--i:4;--door:#262523;--door-dk:#201f1d" inert>
+          <button class="doorway" aria-label="Open the Creative Writing door">
+            <span class="casing"></span>
+            <span class="opening">
+              <span class="room"></span>
+              <span class="spill"></span>
+              <span class="door">
+                <span class="door__flute"></span>
+                <span class="plate">Creative Writing</span>
+                <span class="handle"><span class="handle__lever"></span><span class="handle__lock"></span></span>
+                <span class="door__shade"></span>
+                <span class="leak"></span>
+              </span>
+              <span class="sill"></span>
+            </span>
+            <span class="pool"></span>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="doors__floor" aria-hidden="true"></div>
+    </div>
+  </section>
+
+<section class="writer-section shell" id="selected-work"><div class="writer-section__head"><div><p class="eyebrow">Selected writing</p><h2>Ideas, out in the world.</h2></div><a href="seo-content/">Explore all articles ↗</a></div><p class="writer-lead">A few pieces from my published portfolio. Open a story to read the original.</p><div class="sample-grid"><a class="sample" href="https://nyggs.com/blog/nova-ai-in-nyggs-erp/" target="_blank" rel="noopener noreferrer"><img src="assets/work/sample-01.svg" alt="" loading="lazy" width="640" height="360"><div><p class="sample__tag">SEO & B2B content</p><h3>Meet NOVA AI: Your ERP Finally Starts Working Like a Team Member</h3><span class="sample__read">Read the work ↗</span></div><span aria-hidden="true"> ↗</span></a><a class="sample" href="https://nyggs.com/blog/salary-hike-calculator/" target="_blank" rel="noopener noreferrer"><img src="assets/work/sample-02.svg" alt="" loading="lazy" width="640" height="360"><div><p class="sample__tag">SEO & B2B content</p><h3>Salary Hike Calculator: How to Calculate Salary Hike Percentage</h3><span class="sample__read">Read the work ↗</span></div><span aria-hidden="true"> ↗</span></a><a class="sample" href="https://www.linkedin.com/pulse/7-simple-hack-create-viral-content-examples-aniket-chaudhary-dydmf/" target="_blank" rel="noopener noreferrer"><img src="assets/work/sample-03.svg" alt="" loading="lazy" width="640" height="360"><div><p class="sample__tag">SEO & B2B content</p><h3>7 Relevant Ways to Create Viral Content (With Examples)</h3><span class="sample__read">Read the work ↗</span></div><span aria-hidden="true"> ↗</span></a><a class="sample" href="https://nyggs.com/blog/best-performance-management-software-in-india/" target="_blank" rel="noopener noreferrer"><img src="assets/work/sample-04.svg" alt="" loading="lazy" width="640" height="360"><div><p class="sample__tag">SEO & B2B content</p><h3>12 Best Performance Management Software in India</h3><span class="sample__read">Read the work ↗</span></div><span aria-hidden="true"> ↗</span></a><a class="sample" href="https://nyggs.com/blog/nyggs-hrms-benefits/" target="_blank" rel="noopener noreferrer"><img src="assets/work/sample-05.svg" alt="" loading="lazy" width="640" height="360"><div><p class="sample__tag">SEO & B2B content</p><h3>8 Real NYGGS HRMS Benefits, Straight from a Head of HR</h3><span class="sample__read">Read the work ↗</span></div><span aria-hidden="true"> ↗</span></a><a class="sample" href="https://nyggs.com/blog/erp-implementation-guide/" target="_blank" rel="noopener noreferrer"><img src="assets/work/sample-06.svg" alt="" loading="lazy" width="640" height="360"><div><p class="sample__tag">SEO & B2B content</p><h3>ERP Implementation Guide: 7 Stages, Challenges &amp; Best Practices</h3><span class="sample__read">Read the work ↗</span></div><span aria-hidden="true"> ↗</span></a></div></section>
+  <section id="about" class="story" aria-labelledby="storyTitle" style="--n:5">
+    <div class="story__amb" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="story__track">
+      <div class="story__pin">
+        <div class="shell story__stage">
+          <div class="story__clock">
+            <canvas class="story__bg" aria-hidden="true"></canvas>
+            <p class="eyebrow">My story</p>
+            <h2 class="story__h" id="storyTitle">Let's go back in time.</h2>
+            <div class="story__yr" aria-hidden="true"><span class="dg"><span class="dg__c"><i>0</i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i></span></span><span class="dg"><span class="dg__c"><i>0</i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i></span></span><span class="dg"><span class="dg__c"><i>0</i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i></span></span><span class="dg"><span class="dg__c"><i>0</i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i></span></span></div>
+            <p class="story__when" aria-hidden="true">Apr 2026 — Present</p>
+            <div class="story__meter" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" class="story__rw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/><path d="M12 7v5l3 2"/></svg>
+              <span class="story__count">01</span><span class="story__of">/ 05</span>
+              <i class="story__bar"><b></b></i>
+            </div>
+          </div>
+          <div class="story__line">
+            <span class="story__rail" aria-hidden="true"></span><span class="story__ttrack" aria-hidden="true"><span class="story__tail"></span></span><span class="story__dtrack" aria-hidden="true"><span class="story__dot"></span></span>
+            <ol class="story__list"><li class="ch ch--now" data-y="2026" data-when="Apr 2026 — Present"><p class="ch__date">Apr 2026 — Present</p><h3 class="ch__t">Senior Content Writer</h3><p class="ch__org">VUI Live Private Limited</p><ul class="ch__b"><li>Publishing 30+ pieces monthly across blogs, landing pages, and emails for SaaS, healthcare, B2B, and D2C clients.</li><li>Managing 7 content calendars with 95%+ on-time publication; building SEO and AEO strategies, organic social, and Reddit campaigns.</li></ul></li>
+<li class="ch " data-y="2023" data-when="Jan 2023 — Dec 2025"><p class="ch__date">Jan 2023 — Dec 2025</p><h3 class="ch__t">Bachelor of Arts in English</h3><p class="ch__org">Indira Gandhi National Open University · New Delhi</p><ul class="ch__b"><li>Specialization in English language, literature, and communication.</li><li>A foundation for the research, editing, and storytelling I bring to marketing content.</li></ul></li>
+<li class="ch " data-y="2022" data-when="Oct 2022 — Mar 2026"><p class="ch__date">Oct 2022 — Mar 2026</p><h3 class="ch__t">Content Marketer</h3><p class="ch__org">Watsoo Express Private Limited</p><ul class="ch__b"><li>Helped grow nyggs.com to 70,000+ monthly organic visitors in 18 months through SEO and AEO content.</li><li>Built LinkedIn from 0 to 3,000 followers; wrote email and WhatsApp campaigns that generated 200+ qualified B2B leads.</li><li>Mentored 3 writers, reduced revision cycles by 40%, and edited 500+ B2B content pieces.</li></ul></li>
+<li class="ch " data-y="2021" data-when="Apr 2021 — Sep 2022"><p class="ch__date">Apr 2021 — Sep 2022</p><h3 class="ch__t">Content Writer</h3><p class="ch__org">CRC IT Infotech</p><ul class="ch__b"><li>Built my professional writing foundation at a software development company.</li><li>As my old portfolio recounts, 2021 also brought my first freelance client, DigitallyBugged — and experience with content calendars, social copy, and email campaigns.</li></ul></li>
+<li class="ch " data-y="2017" data-when="2017 — The beginning"><p class="ch__date">2017 — The beginning</p><h3 class="ch__t">A curious observer. Then a writer.</h3><p class="ch__org">New Delhi · My story</p><ul class="ch__b"><li>Started as a data entry operator in 2017. Exploring new skills led me to writing — and to helping brands communicate clearly.</li><li>I run ViralStorys.com, edited Deva: A Part of Me, love Hindi, and always have room for a conversation over masala chai.</li></ul></li>
+</ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="writer-section writer-toolkit shell" id="skills"><p class="eyebrow">The writer’s toolkit</p><h2>Strategy, craft, and a little curiosity.</h2><div class="toolkit-grid"><article><h3>Content &amp; growth</h3><p>Organic growth strategy · SEO · AEO · Keyword research · Content auditing · Content distribution · B2B &amp; D2C marketing · LinkedIn &amp; Reddit marketing</p></article><article><h3>Writing &amp; campaigns</h3><p>Blogs &amp; landing pages · Brand storytelling · Ad copy · Email sequences · Video scripts · PR collateral · Pitch decks · Proofreading &amp; editing</p></article><article><h3>Research &amp; publishing</h3><p>Google Search Console · Google Analytics · Ahrefs · Semrush · WordPress · Mailchimp · Zoho Campaigns · Brevo</p></article><article><h3>AI &amp; productivity</h3><p>ChatGPT · Claude · Gemini · Perplexity · Prompt engineering · Canva · Grammarly · Readable.com · Hemingway Editor</p></article></div><div class="writer-section__head"><h3>Certifications &amp; continued learning</h3><a href="creative-writing/">The creative side ↗</a></div><div class="cert-grid"><a class="certificate" href="https://drive.google.com/file/d/1Pm5YbATBuROqiGwFYgcPXKjC9xRRdcRj/view" target="_blank" rel="noopener noreferrer"><small>Google Digital Garage</small><h3>Fundamentals of Digital Marketing</h3><span>View certificate ↗</span><span aria-hidden="true"> ↗</span></a><a class="certificate" href="https://www.linkedin.com/learning/certificates/ad67fbb2f9a5c0ba309ecd131721fd240afbb9b88b697ac46149413ae0eca667" target="_blank" rel="noopener noreferrer"><small>LinkedIn Learning</small><h3>Copywriting for Social Media</h3><span>View certificate ↗</span><span aria-hidden="true"> ↗</span></a><a class="certificate" href="https://static.semrush.com/academy/certificates/9533ec58b2/aniket-chaudhary_1.pdf" target="_blank" rel="noopener noreferrer"><small>Semrush Academy</small><h3>Keyword Research with Semrush</h3><span>View certificate ↗</span><span aria-hidden="true"> ↗</span></a><article class="certificate"><small>Currently learning</small><h3>AI SEO &amp; Generative Engine Optimization</h3><span>Ongoing · as listed in my resume</span></article></div></section>
+</main>
+<div class="sfw">
+<footer class="sf" id="contact-footer" aria-labelledby="sfTitle">
+  <div class="sf__in">
+    <p class="sf__eye"><i></i>Let’s talk content</p>
+    <h2 class="sf__h" id="sfTitle">Got a story?<span>Let’s make it work.</span></h2>
+    <p class="sf__p">Need content that connects with your audience? Let’s talk about your blogs, website copy, social content, email campaigns, or next big idea.</p>
+    <div class="sf__cta">
+      <button class="sf__btn" data-contact>Start a project <b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></b></button>
+      <button class="sf__ghost" data-go="works">See my work</button>
+    </div>
+<div class="writer-contact"><a href="mailto:ch.aniket12@gmail.com">ch.aniket12@gmail.com</a><a href="tel:+919717093257">+91 97170 93257</a><a href="https://www.linkedin.com/in/aniket-writer/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://wa.link/u7tl23" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><a href="downloads/Aniket-Chaudhary-Resume.pdf" download>Download resume ↓</a></div>
+    <div class="sf__cols">
+      <div><h3>Work</h3><ul class="work"><li><a href="seo-content/" data-door="0">SEO Content</a></li><li><a href="website-copy/" data-door="1">Website Copy</a></li><li><a href="social-ad-copy/" data-door="2">Social & Ad Copy</a></li><li><a href="email-scripts/" data-door="3">Email & Scripts</a></li><li><a href="creative-writing/" data-door="4">Creative Writing</a></li></ul></div>
+      <div><h3>Navigate</h3><ul><li><a href="./" data-go="home">Home</a></li><li><a href="./#about" data-go="about">My story</a></li><li><button data-contact>Contact</button></li></ul></div>
+      <div><h3>Status</h3><ul><li class="st">Let’s talk content</li><li class="st">New Delhi, India · Working remotely</li><li class="st">Local time <span data-ftime>—</span></li></ul></div>
+    </div>
+    <div class="sf__bot"><span>© <span data-fyear>2026</span> Aniket Chaudhary. Marketing Content Writer · CopyWithAniket.</span><span class="sf__legal"><a href="legal/" target="_top">Privacy &amp; credits</a></span><button data-go="home">Back to top ↑</button></div>
+  </div>
+</footer>
+</div>
+<button class="totop" data-go="home" aria-label="Back to top"><svg class="ring" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24"/></svg><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg><span class="lbl">Back to top</span></button>
+
+<script>
+(() => {
+  const M = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const tick = () => { const d = new Date(), h = d.getHours();
+    document.querySelectorAll('[data-ftime]').forEach(e => e.textContent = `${h % 12 || 12}:${String(d.getMinutes()).padStart(2, '0')}${h < 12 ? 'am' : 'pm'}`);
+    document.querySelectorAll('[data-fyear]').forEach(e => e.textContent = d.getFullYear()); };
+  tick(); setInterval(tick, 20000);
+  // size the footer name so it spans the full width with only a sliver of margin
+  const fit = () => document.querySelectorAll('.sf').forEach(f => {
+    const w = f.querySelector('.sf__word'); if (!w) return;
+    const span = [...w.children].find(s => getComputedStyle(s).display !== 'none'); if (!span) return;
+    w.style.setProperty('--wf', '100px');
+    const k = (f.clientWidth * .955) / span.getBoundingClientRect().width;
+    f.style.setProperty('--wf', (100 * k).toFixed(2) + 'px'); w.style.removeProperty('--wf');
+  });
+  fit(); addEventListener('resize', fit); document.fonts?.ready.then(fit);
+  // the footer's rounded corners show whatever sits directly above it: find that section's colour and paint it behind them
+  const sfw = document.querySelector('.sfw');
+  const above = () => {
+    if (!sfw) return;
+    const solid = e => { const c = getComputedStyle(e).backgroundColor; const m = c.match(/[\d.]+/g); return m && !(m.length > 3 && +m[3] < .05) ? c : ''; };
+    let col = '', e = sfw.previousElementSibling;
+    while (e){ if (e.getBoundingClientRect().width >= innerWidth * .9){ const c = solid(e); if (c) col = c; } e = e.lastElementChild; }
+    const bg = col || solid(document.body) || getComputedStyle(document.documentElement).backgroundColor;
+    sfw.style.setProperty('--above', bg);
+    // a dark section above: a hairline keeps the footer reading as its own section
+    const m = (bg.match(/[\d.]+/g) || [255, 255, 255]).map(Number);
+    sfw.classList.toggle('sfw--dark', (.2126 * m[0] + .7152 * m[1] + .0722 * m[2]) / 255 < .25);
+  };
+  above(); addEventListener('load', above); addEventListener('resize', above);
+  new MutationObserver(above).observe(document.documentElement, { attributes: true, attributeFilter: ['data-mode'] });
+  // floating back-to-top: appears after the first screen, shows scroll progress, flips colour over dark backgrounds
+  const tt = document.querySelector('.totop');
+  if (tt) {
+    const c = tt.querySelector('.ring circle'); tt.style.setProperty('--len', (2 * Math.PI * 24).toFixed(2));
+    const lum = el => { for (let e = el; e && e !== document.documentElement; e = e.parentElement) {
+        const m = getComputedStyle(e).backgroundColor.match(/[\d.]+/g); if (!m) continue;
+        if (m.length > 3 && +m[3] < .5) continue; return (.2126 * m[0] + .7152 * m[1] + .0722 * m[2]) / 255; }
+      const m = getComputedStyle(document.body).backgroundColor.match(/[\d.]+/g) || [255,255,255];
+      return (m.length > 3 && +m[3] < .5) ? (document.documentElement.dataset.mode === 'dark' ? 0 : 1) : (.2126 * m[0] + .7152 * m[1] + .0722 * m[2]) / 255; };
+    let raf = 0;
+    const upd = () => { raf = 0;
+      const max = document.documentElement.scrollHeight - innerHeight, y = scrollY;
+      const bot = document.querySelector('.sf__bot');  // the footer has its own 'Back to top', so step aside once it's on screen
+      tt.classList.toggle('show', y > innerHeight * .9 && !(bot && bot.getBoundingClientRect().top < innerHeight - 8));
+      tt.style.setProperty('--p', max > 0 ? Math.min(1, y / max).toFixed(4) : 0);
+      const r = tt.getBoundingClientRect();
+      tt.style.pointerEvents = 'none';
+      const under = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
+      tt.style.pointerEvents = '';
+      if (under) tt.dataset.on = lum(under) < .45 ? 'dark' : 'light'; };
+    const q = () => { if (!raf) raf = requestAnimationFrame(upd); };
+    addEventListener('scroll', q, { passive: true }); addEventListener('resize', q);
+    new MutationObserver(q).observe(document.documentElement, { attributes: true, attributeFilter: ['data-mode', 'class'] });
+    upd();
+  }
+})();
+</script>
+
+<script>
+// press F for full screen (again, or Esc, to leave); ignored while typing
+(() => {
+  const typing = e => { const t = e.target; return t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName)); };
+  const toggle = () => {
+    const d = document, el = d.documentElement;
+    if (d.fullscreenElement || d.webkitFullscreenElement) (d.exitFullscreen || d.webkitExitFullscreen).call(d);
+    else (el.requestFullscreen || el.webkitRequestFullscreen)?.call(el)?.catch?.(() => {});
+  };
+  addEventListener('keydown', e => {
+    if ((e.key !== 'f' && e.key !== 'F') || e.metaKey || e.ctrlKey || e.altKey || typing(e)) return;
+    e.preventDefault();
+    if (window.top !== window) { try { parent.postMessage({ wall: 'fullscreen' }, location.origin === 'null' ? '*' : location.origin); } catch (_) {} return; }
+    toggle();
+  });
+  if (window.top === window) addEventListener('message', e => {
+    // only one of this page's own frames can ask for full screen
+    if (!e.data || e.data.wall !== 'fullscreen' || ![...document.querySelectorAll('iframe')].some(f => f.contentWindow === e.source)) return;
+    toggle();
+  });
+})();
+</script>
+
+
+
+<!-- ============ Door cursor + walk-through veil ============ -->
+<div class="door-cursor" id="doorCursor" aria-hidden="true">Click to enter</div>
+<div class="veil" id="veil" aria-hidden="true" hidden></div>
+<div class="shade" id="shade" aria-hidden="true" hidden></div>
+<div class="passage" id="passage" aria-hidden="true" hidden></div>
+<div class="wallv" id="wallv"></div>
+
+<!-- ============ NavMenu ============ -->
+<div class="navm" id="navm" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+  <div class="shell navm__top">
+    <span class="brand"><svg aria-hidden="true" focusable="false" viewBox="0 0 48 48" fill="currentColor"><path d="M24 2c2.2 13.8 7.9 19.6 22 22-14.1 2.4-19.8 8.2-22 22-2.2-13.8-7.9-19.6-22-22 14.1-2.4 19.8-8.2 22-22Z"/></svg>Aniket</span>
+    <button class="close-btn" id="navClose"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4l16 16M20 4 4 20"/></svg>Close</button>
+  </div>
+  <nav class="shell navm__nav" aria-label="Menu"><ul id="navList"></ul></nav>
+  <div class="shell navm__bot">
+    <span>Local time<span data-navtime></span></span>
+    <button id="navStart" style="min-height:44px">Start a project →</button>
+  </div>
+</div>
+
+<!-- ============ RequestModal ============ -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" hidden>
+  <div class="modal__panel" id="mPanel">
+    <button class="x-btn" id="mClose" aria-label="Close"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4l16 16M20 4 4 20"/></svg></button>
+    <div id="mForm">
+      <div class="mhead"><p>Start a project</p><h2 id="mTitle">Tell me what you’re writing next.</h2></div>
+<p class="writer-modal-email">Email me at <a href="mailto:ch.aniket12@gmail.com">ch.aniket12@gmail.com</a> or <a href="https://wa.link/u7tl23" target="_blank" rel="noopener noreferrer">message me on WhatsApp ↗</a>.</p>
+      <form class="mform" id="reqForm" name="contact">
+        <label for="f-name"><span>Name</span><input id="f-name" name="name" type="text" required maxlength="80" placeholder="Your name" autocomplete="name"></label>
+        <label for="f-email"><span>Email</span><input id="f-email" name="email" type="email" required maxlength="120" placeholder="you@company.com" autocomplete="email"></label>
+        <label for="f-project"><span>Project</span><textarea id="f-project" name="project" rows="4" required maxlength="1500" placeholder="A few words about your project, timeline, and budget."></textarea></label>
+        <div class="mform__bot">
+          <small>Let’s discuss your goals, audience, and timeline.</small>
+          <button type="submit" class="pill pill--dark pill--arrow" id="mSend">
+            <span class="pill__in" data-h="s 1 1.04" data-hs="320 18" data-ht=".pill"><span id="mSendLbl">Write the email</span>
+              <span class="pill__badge"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-h="x 0 2|y 0 -2" data-hs="320 18" data-ht=".pill"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </span>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="msuccess" id="mSuccess" role="status" aria-live="polite" hidden>
+      <div class="msuccess__badge"><svg aria-hidden="true" focusable="false" viewBox="0 0 48 48" fill="currentColor"><path d="M24 2c2.2 13.8 7.9 19.6 22 22-14.1 2.4-19.8 8.2-22 22-2.2-13.8-7.9-19.6-22-22 14.1-2.4 19.8-8.2 22-22Z"/></svg></div>
+      <h2 id="mOkT">Almost there</h2>
+      <p id="mOkP">Your email app has opened with your message ready to go. Press send there to get in touch.</p>
+      <p class="msuccess__alt">Email app didn't open? Write to <a data-mail href="#contact">my email</a>.</p>
+      <button class="pill pill--dark" id="mDone"><span class="pill__in" data-h="s 1 1.04" data-hs="320 18" data-ht=".pill">Close</span></button>
+    </div>
+  </div>
+</div>
+
+<script type="importmap">
+{ "imports": { "lenis": "./vendor/lenis.min.mjs" } }
+</script>
+<script type="module" src="assets/main.js?v=writer-2"></script>
+
+<script>
+// my story: you scroll the chapters naturally. The dot travels the line in step with the page, the year rolls back as each
+// chapter reaches the middle of the screen, and (on larger screens) the clock tunnel behind the year turns with your scroll.
+(() => {
+  const sec = document.querySelector('.story'); if (!sec) return;
+  const line = sec.querySelector('.story__line'), list = sec.querySelector('.story__list');
+  const chs = [...list.querySelectorAll('.ch')], N = chs.length;
+  const cols = [...sec.querySelectorAll('.dg__c')], when = sec.querySelector('.story__when'), count = sec.querySelector('.story__count');
+  const dot = sec.querySelector('.story__dot'), rail = sec.querySelector('.story__rail'), cv = sec.querySelector('.story__bg'), ctx = cv.getContext('2d');
+  const root = document.documentElement;
+  let shownYear = '', shown = -1;
+  const setYear = y => { if (y === shownYear) return; shownYear = y; String(y).split('').forEach((d, k) => cols[k] && cols[k].style.setProperty('--d', d)); };
+  const show = i => {
+    if (i === shown) return; shown = i;
+    chs.forEach((c, k) => c.classList.toggle('on', k === i));
+    setYear(chs[i].dataset.y); when.textContent = chs[i].dataset.when; count.textContent = String(i + 1).padStart(2, '0');
+    sec.classList.toggle('is-now', i === 0);
+    sec.dataset.ch = i;                                     // the backdrop light takes this chapter's colour
+  };
+  // ---- the tunnel ----
+  let W = 0, H = 0, dpr = 1, rgb = '26,24,24';
+  const size = () => { dpr = Math.min(2, devicePixelRatio || 1); W = cv.clientWidth; H = cv.clientHeight; cv.width = W * dpr; cv.height = H * dpr; };
+  const readRgb = () => { rgb = (getComputedStyle(root).getPropertyValue('--fg-rgb') || '26,24,24').trim(); };
+  new MutationObserver(readRgb).observe(root, { attributes: true, attributeFilter: ['data-mode'] });
+  const RINGS = 16, GAP = 340, FOCAL = 520, R = 620, TICKS = 60;
+  const dust = Array.from({ length: 70 }, () => ({ a: Math.random() * Math.PI * 2, r: 120 + Math.random() * 760, z: Math.random() * RINGS * GAP, s: .6 + Math.random() * 1.4 }));
+  function tunnel(p, t){
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, W, H);
+    const mob = W < 768, cx = W * .5, cy = H * .55, k = Math.min(W, H) / 900;
+    const camZ = p * (N - 1) * GAP * 1.6 + t * 18;          // scrolling carries you deeper into the past; it drifts a little on its own too
+    const spin = -p * Math.PI * 1.5 - t * .02;               // the dials wind backwards
+    const len = RINGS * GAP;
+    ctx.lineCap = 'round';
+    for (let i = 0; i < RINGS; i++){
+      let z = ((i * GAP - camZ) % len + len) % len + 60;     // distance in front of the camera, recycled
+      const s = FOCAL / z * k, fog = Math.min(1, Math.max(0, (z - 260) / 1100)) * Math.max(0, 1 - z / len);   // fades out as it reaches you, so it never sits over the text
+      if (fog <= .01) continue;
+      const rr = R * s, rot = spin + i * .21;
+      // the ring itself
+      ctx.strokeStyle = `rgba(${rgb},${(fog * .12).toFixed(3)})`; ctx.lineWidth = Math.max(.5, 1.2 * s);
+      ctx.beginPath(); ctx.arc(cx, cy, rr, 0, Math.PI * 2); ctx.stroke();
+      // the clock ticks, long ones on the hours: drawn as two batched paths per dial, not one stroke per tick
+      const T = W < 768 ? 36 : TICKS, every = T / 12;
+      for (const hour of [false, true]){
+        const l = (hour ? 46 : 18) * s;
+        ctx.beginPath();
+        for (let j = 0; j < T; j++){
+          if ((j % every === 0) !== hour) continue;
+          const a = rot + j / T * Math.PI * 2, c = Math.cos(a), d = Math.sin(a);
+          ctx.moveTo(cx + c * (rr - l), cy + d * (rr - l)); ctx.lineTo(cx + c * rr, cy + d * rr);
+        }
+        ctx.strokeStyle = `rgba(${rgb},${(fog * (hour ? .3 : .14)).toFixed(3)})`; ctx.lineWidth = Math.max(.5, (hour ? 3 : 1.4) * s); ctx.stroke();
+      }
+      // a single hand on each dial
+      const ha = rot * 3 + i;
+      ctx.strokeStyle = `rgba(${rgb},${(fog * .16).toFixed(3)})`; ctx.lineWidth = Math.max(.5, 2 * s);
+      if (rr < Math.min(W, H) * .45){ ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + Math.cos(ha) * rr * .55, cy + Math.sin(ha) * rr * .55); ctx.stroke(); }
+    }
+    // dust drifting past
+    for (const q of dust){
+      const z = ((q.z - camZ * 1.1) % len + len) % len + 40, s = FOCAL / z * k, fog = Math.min(1, Math.max(0, (z - 300) / 900)) * Math.max(0, 1 - z / len);
+      const a = q.a + spin * .3;
+      ctx.fillStyle = `rgba(${rgb},${(fog * .35).toFixed(3)})`;
+      ctx.beginPath(); ctx.arc(cx + Math.cos(a) * q.r * s, cy + Math.sin(a) * q.r * s, Math.max(.4, q.s * s * 2.2), 0, Math.PI * 2); ctx.fill();
+    }
+  }
+
+  // positions along the line, measured once (and again on resize), never during a scroll
+  let firstY = 0, lastY = 0, endY = 0;
+  const measure = () => {
+    const mark = c => line.offsetTop * 0 + list.offsetTop + c.offsetTop + c.firstElementChild.offsetTop + 8;
+    firstY = mark(chs[0]); lastY = mark(chs[N - 1]);
+    const last = chs[N - 1]; endY = list.offsetTop + last.offsetTop + last.offsetHeight - parseFloat(getComputedStyle(last).paddingBottom);
+    for (const el of [rail, sec.querySelector('.story__dtrack'), sec.querySelector('.story__ttrack')]){ el.style.setProperty('--r0', firstY + 'px'); el.style.setProperty('--rh', (endY - firstY) + 'px'); }
+    if (innerWidth >= 768) size();
+  };
+  let raf = 0, p = 0, dotY = null, lastT = 0;
+  function update(){
+    raf = 0;
+    const lr = line.getBoundingClientRect(), mid = innerHeight * .5;
+    // the dot sits wherever the middle of the screen falls on the line
+    const y = Math.min(lastY, Math.max(firstY, mid - lr.top));
+    p = (y - firstY) / Math.max(1, lastY - firstY);
+    sec.style.setProperty('--p', p.toFixed(4)); sec.style.setProperty('--warm', p.toFixed(3));
+    sec.classList.toggle('at-start', p < .002);                // nothing travelled yet: no tail poking above the line
+    let i = 0; for (let k = 0; k < N; k++) if (lr.top + list.offsetTop + chs[k].offsetTop < mid + 40) i = k;
+    show(i);
+    if (innerWidth >= 768 && !reducedM && !root.classList.contains('lite')) tunnel(p, 0);
+  }
+  const reducedM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const q = () => { if (!raf) raf = requestAnimationFrame(update); };
+  addEventListener('scroll', q, { passive: true });
+  addEventListener('resize', () => { measure(); q(); });
+  new MutationObserver(() => { readRgb(); q(); }).observe(root, { attributes: true, attributeFilter: ['data-mode'] });
+  readRgb(); measure(); show(0); update();
+  document.fonts?.ready.then(() => { measure(); q(); });
+  addEventListener('load', () => { measure(); q(); });
+})();
+</script>
+
+
+
+</div>
+
+</body>
+</html>
