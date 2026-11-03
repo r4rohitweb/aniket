@@ -1,0 +1,27 @@
+.novel-section{--novel-text:#262321;--novel-secondary:#514943;--novel-border:#c9c0b7;position:relative;z-index:2;isolation:isolate;background:var(--background);color:var(--novel-text);border-top:1px solid var(--novel-border);scroll-margin-top:6rem}
+.novel-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(3rem,6vw,6rem);align-items:center}
+.novel-stage{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem 2.5rem;min-height:35rem;border:1px solid var(--novel-border);border-radius:1.2rem;background:var(--surface);margin:0}
+.novel-stage__top{align-self:stretch;display:flex;justify-content:space-between;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--novel-secondary);margin-bottom:2rem}
+.novel-book{position:relative;width:69%;max-width:19rem;transform:perspective(1000px) rotateY(-8deg) rotate(-2deg);transition:transform .5s ease;margin:0 auto;color-scheme:only light}
+.novel-book img{width:100%;height:auto;border-radius:2px 5px 5px 2px;box-shadow:12px 20px 32px #0003,2px 3px 4px #0003}
+.novel-book::after{content:"";position:absolute;inset:0 auto 0 3%;width:3%;background:linear-gradient(90deg,#0005,#ffffff12,transparent);pointer-events:none}
+.novel-stage:hover .novel-book{transform:perspective(1000px) rotateY(0) rotate(0)}
+.novel-stage figcaption{margin-top:2.3rem;color:var(--novel-secondary);font-size:14px;line-height:1.6;text-align:center}
+.novel-copy .eyebrow{font-size:14px;color:var(--novel-secondary);margin-bottom:1.5rem}
+.writer-section .novel-title{font:400 clamp(4rem,6vw,6rem)/.95 Georgia,'Times New Roman',serif;letter-spacing:-.045em;color:var(--novel-text);margin:0}
+.novel-subtitle{font:400 italic clamp(1.5rem,2.5vw,2rem)/1.5 Georgia,'Times New Roman',serif;margin:.8rem 0 1.2rem;color:var(--novel-text)}
+.novel-byline{font-size:16px;color:var(--novel-secondary);line-height:1.8}
+.novel-summary{font-size:max(17px,1.0625rem);line-height:1.85;color:var(--novel-secondary);margin:1.8rem 0;max-width:48ch}
+.novel-credit{padding:1.25rem 0;border-top:1px solid var(--novel-border);border-bottom:1px solid var(--novel-border);display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.8rem}
+.novel-credit dt{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--novel-secondary);margin-bottom:.45rem;line-height:1.6}
+.novel-credit dd{font-size:16px;color:var(--novel-text);line-height:1.6;margin:0}
+.novel-actions{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
+.novel-actions a{display:inline-flex;align-items:center;gap:.8rem;border:1px solid var(--novel-border);border-radius:999px;padding:.9rem 1.25rem;font-size:15px;line-height:1.5;color:var(--novel-text)}
+.novel-actions a:first-child{color:var(--background);background:var(--novel-text);border-color:var(--novel-text)}
+.novel-actions a:focus-visible{outline:2px solid var(--novel-text);outline-offset:4px}
+.novel-source{font-size:13px;color:var(--novel-secondary);line-height:1.8;margin-top:1.4rem}.novel-source a{text-decoration:underline;text-underline-offset:3px}
+html[data-mode="dark"] .novel-section{--novel-text:#f2ede7;--novel-secondary:#cdc3b9;--novel-border:#514740}
+@media(min-width:1200px) and (max-width:1490px){.hdr .clock__date,.hdr .clock__sep,.hdr .clock__ds{display:none}}
+@media(max-width:1000px){.novel-layout{gap:2rem}.novel-stage{padding:1.5rem;min-height:29rem}.novel-book{width:80%}.novel-credit{grid-template-columns:1fr}.novel-actions a{padding:.8rem 1rem}}
+@media(max-width:700px){.novel-layout{grid-template-columns:1fr;gap:2.5rem}.novel-stage{min-height:0;padding:1.5rem 2rem}.novel-book{width:75%;max-width:15rem}.novel-stage__top{margin-bottom:1.7rem}.novel-stage figcaption{margin-top:1.7rem}.novel-credit{grid-template-columns:1fr 1fr}.novel-copy .eyebrow{margin-bottom:1.2rem}.novel-summary{font-size:17px}.novel-title{font-size:4.5rem}.novel-actions{gap:.6rem}.novel-actions a{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.novel-book{transition:none;transform:none}.novel-stage:hover .novel-book{transform:none}}

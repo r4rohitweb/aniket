@@ -2,7 +2,8 @@ RewriteEngine On
 RewriteBase /testing/aniket-prof/
 
 # Section URLs share the homepage; portfolio rooms keep their own files.
-RewriteRule ^(?:home|work|my-story)/?$ index.html [END]
+RewriteRule ^(home|work|my-story|certificates|tools|novel)/$ $1 [R=302,L]
+RewriteRule ^(?:home|work|my-story|certificates|tools|novel)/?$ index.html [END]
 
 # Keep old portfolio links working without duplicate pages.
 RewriteRule ^web-developer(?:/index\.html)?/?$ seo-content/ [R=302,L]

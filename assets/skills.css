@@ -1,0 +1,22 @@
+.writer-skills{border-top:1px solid var(--line)}
+.skills-layout{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,2fr);gap:clamp(2rem,4vw,5rem);align-items:start}
+.skills-intro{padding-top:.5rem}
+.writer-skills .skills-intro h2{font-size:clamp(2.3rem,3.7vw,3.6rem);max-width:11ch;line-height:1.1;letter-spacing:-.055em;margin:1.3rem 0 1.5rem}
+.skills-intro__text{color:var(--foreground);opacity:.75;font-size:.95rem;line-height:1.8;max-width:29ch}
+.skills-intro__rule{display:block;width:3rem;height:2px;background:var(--muted);margin:2rem 0}
+.skills-intro__note{color:var(--muted);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;line-height:1.9;max-width:25ch}
+.skills-panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem}
+.skill-panel{--skill-tone:#63725b;position:relative;padding:1.6rem;border:1px solid var(--line);border-radius:1.15rem;background:var(--surface);overflow:hidden}
+.skill-panel::before{content:"";position:absolute;top:0;left:1.6rem;width:2.7rem;height:2px;background:var(--skill-tone)}
+.skill-panel:nth-child(2){--skill-tone:#8c6654}.skill-panel:nth-child(3){--skill-tone:#64728e}.skill-panel:nth-child(4){--skill-tone:#886c80}
+.skill-panel__top{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem}
+.skill-panel__icon{display:grid;place-items:center;width:2.65rem;height:2.65rem;border-radius:.7rem;border:1px solid var(--line);background:var(--background);color:var(--skill-tone)}
+.skill-panel__icon svg{width:1.3rem;height:1.3rem}
+.skill-panel__number{color:var(--muted);font:400 .65rem/1 ui-monospace,monospace;letter-spacing:.1em}
+.skill-panel h3{font-size:1.2rem;font-weight:500;letter-spacing:-.035em;line-height:1.35;max-width:19ch;margin-bottom:.6rem}
+.skill-panel__description{font-size:.8rem;line-height:1.7;color:var(--foreground);opacity:.7;margin-bottom:1.3rem;max-width:33ch}
+.skill-tags{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.45rem}
+.skill-tags li{font-size:.67rem;line-height:1.4;letter-spacing:.005em;padding:.5rem .65rem;border:1px solid var(--line);border-radius:.45rem;background:var(--background);color:var(--foreground)}
+html[data-mode="dark"] .skill-panel{--skill-tone:#b6c7a8}html[data-mode="dark"] .skill-panel:nth-child(2){--skill-tone:#d9ac8d}html[data-mode="dark"] .skill-panel:nth-child(3){--skill-tone:#b7c5e0}html[data-mode="dark"] .skill-panel:nth-child(4){--skill-tone:#d2b9cb}
+@media(max-width:1100px){.skills-layout{grid-template-columns:1fr}.writer-skills .skills-intro h2{max-width:20ch}.skills-intro__text{max-width:55ch}.skills-intro__rule,.skills-intro__note{display:none}}
+@media(max-width:639.98px){.skills-panels{grid-template-columns:1fr;gap:1rem}.skill-panel{padding:1.4rem}.skill-panel__top{margin-bottom:1.2rem}.skill-panel h3{font-size:1.3rem;max-width:none}.skill-tags li{font-size:.75rem;padding:.55rem .7rem}.skill-panel__description{font-size:.9rem;max-width:none}.writer-skills .skills-intro h2{font-size:2.5rem;max-width:13ch}.skills-intro__text{font-size:.95rem}.skills-layout{gap:2rem}}

@@ -114,7 +114,7 @@ function closeLayer(el, after){
   setTimeout(() => { el.hidden = true; el.classList.remove('closing'); startScroll(); after?.(); }, 460);
 }
 // nav menu
-const NAV = [['Home','home'],['SEO Content',0],['Website Copy',1],['Social & Ad Copy',2],['Email & Scripts',3],['My story','about'],['Contact',null]];
+const NAV = [['Home','home'],['SEO Content',0],['Website Copy',1],['Social & Ad Copy',2],['Email & Scripts',3],['My story','about'],['Novel','novel'],['Tools','tools'],['Certificates','certificates'],['Contact',null]];
 const navm = $('#navm');
 $('#navList').innerHTML = NAV.map(([l, id], i) =>
   `<li><button class="navm__item" style="--d:${i * 45 + 80}ms" data-i="${i}"><small>0${i + 1}</small><span>${l}</span></button></li>`).join('');
@@ -1098,15 +1098,15 @@ if (['#works', '#about', '#contact'].includes(location.hash)){
 (() => {
   if (!true || location.protocol === 'file:') return;
   const dir = new URL(document.baseURI).pathname;
-  const ROUTE = { home: 'home', works: 'work', about: 'my-story' };
+  const ROUTE = { home: 'home', works: 'work', about: 'my-story', certificates: 'certificates', tools: 'tools', novel: 'novel' };
   let cur = '';
   const set = name => {
     if (name === cur || (history.state && history.state.wall)) return;   // never while a door's page is open
     cur = name;
     try { history.replaceState(history.state, '', dir + ROUTE[name]); } catch (e) {}
   };
-  const sectionRoute = location.pathname.match(/\/(home|work|my-story)\/?$/)?.[1];
-  const first = location.hash === '#about' ? 'about' : location.hash === '#works' ? 'works'
+  const sectionRoute = location.pathname.match(/\/(home|work|my-story|certificates|tools|novel)\/?$/)?.[1];
+  const first = location.hash === '#novel' || sectionRoute === 'novel' ? 'novel' : location.hash === '#tools' || sectionRoute === 'tools' ? 'tools' : location.hash === '#certificates' || sectionRoute === 'certificates' ? 'certificates' : location.hash === '#about' ? 'about' : location.hash === '#works' ? 'works'
     : sectionRoute === 'my-story' ? 'about' : sectionRoute === 'work' ? 'works' : 'home';
   addEventListener('intro:ready', () => {
     if (first !== 'home') {
@@ -1117,9 +1117,9 @@ if (['#works', '#about', '#contact'].includes(location.hash)){
       }
     }
     set(first);
-    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) set(e.target.id === 'works' ? 'works' : e.target.id === 'about' ? 'about' : 'home'); }),
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) set(e.target.id); }),
       { rootMargin: '-45% 0px -45% 0px' });
-    ['home', 'works', 'about'].forEach(id => { const el = document.getElementById(id); if (el) io.observe(el); });
+    ['home', 'works', 'about', 'novel', 'tools', 'certificates'].forEach(id => { const el = document.getElementById(id); if (el) io.observe(el); });
   }, { once: true });
 })();
 
